@@ -8,16 +8,16 @@
 // Usa array , while ou do para Menu interativo
 // 1° passo menu interativo
 let patients = ['Thierry', 'Gustavo' , 'Rodolfo' ]
-let hub = prompt(`Lista De Pacientes\n1°${patients[0]}\n2°${patients[1]}\n3°${patients[2]}\nOPÇÕES:\n1: Novo paciente\n2: Consultar paciente\n3: Sair do menu`)
+let hub = prompt(`Lista De Pacientes\n1°${patients}\nOPÇÕES:\n1: Novo paciente\n2: Consultar paciente\n3: Sair do menu`)
 while(hub !=  3) {
    if (hub == 1) {
     let nameP = prompt('nome do paciente')
     patients.push(nameP)
    }
    if (hub == 2) {
-    let nameP = prompt('nome do paciente')
+
     patients.shift()
    }
-    hub = prompt(`Lista De Pacientes\n1°${patients[0]}\n2°${patients[1]}\n3°${patients[2]}\nOPÇÕES:\n1: Novo paciente\n2: Consultar paciente\n3: Sair do menu`)
+    hub = prompt(`Lista De Pacientes\n1°${patients}\nOPÇÕES:\n1: Novo paciente\n2: Consultar paciente\n3: Sair do menu`)
 
 }
